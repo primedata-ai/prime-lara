@@ -1,0 +1,33 @@
+{
+  "name": "primedata-ai/prime-lara",
+  "description": "PrimeDATA sdk for Laravel",
+  "type": "library",
+  "require": {
+    "primedata-ai/analytics-php": "v0.2.1",
+    "enqueue/redis": "^0.9.12",
+    "predis/predis": "^1.1",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.4",
+    "mockery/mockery": "^1.3",
+    "barryvdh/laravel-ide-helper": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Prime\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paul Aan",
+      "email": "paul.ng@primedata.ai"
+    }
+  ]
+}
