@@ -36,18 +36,18 @@ class LaravelBuffer implements QueueBuffer
     /**
      * @inheritDoc
      */
-    public function sendMessage(string $topic, \JsonSerializable $msg)
+    public function sendMessage(string $topic, object $msg)
     {
-        $topic = $this->queueContext->createTopic('aTopic');
-        $message = $this->queueContext->createMessage($msg);
+        $topic = $this->queueContext->createTopic($topic);
+        $message = $this->queueContext->createMessage(serialize($msg));
         try {
             $this->producer->send($topic, $message);
         } catch (InvalidDestinationException $e) {
-            Log::error($e->getMessage(), $msg);
+            Log::error($e->getMessage(), $msg->jsonSerialize());
         } catch (InvalidMessageException $e) {
-            Log::error($e->getMessage(), $msg);
+            Log::error($e->getMessage(), $msg->jsonSerialize());
         } catch (Exception $e) {
-            Log::error($e->getMessage(), $msg);
+            Log::error($e->getMessage(), $msg->jsonSerialize());
         }
     }
 }
