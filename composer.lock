@@ -4,52 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2734b3e932e4ed7c1439fa2f2deedd4f",
+    "content-hash": "039fad7d42886cf746b18b56898882de",
     "packages": [
-        {
-            "name": "cweagans/composer-patches",
-            "version": "1.6.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
-                "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "composer/composer": "~1.0",
-                "phpunit/phpunit": "~4.6"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "cweagans\\Composer\\Patches"
-            },
-            "autoload": {
-                "psr-4": {
-                    "cweagans\\Composer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Cameron Eagans",
-                    "email": "me@cweagans.net"
-                }
-            ],
-            "description": "Provides a way to patch Composer packages.",
-            "time": "2019-08-29T20:11:49+00:00"
-        },
         {
             "name": "enqueue/dsn",
             "version": "0.9.2",
@@ -482,16 +438,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b"
+                "reference": "0a41ea7f7fedacf307b7a339800e10356a042918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d8f6a6a91d1eb9304527b040500f61923e97674b",
-                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/0a41ea7f7fedacf307b7a339800e10356a042918",
+                "reference": "0a41ea7f7fedacf307b7a339800e10356a042918",
                 "shasum": ""
             },
             "require": {
@@ -567,7 +523,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-04T19:12:46+00:00"
+            "time": "2020-08-24T12:35:58+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -616,23 +572,23 @@
         },
         {
             "name": "predis/predis",
-            "version": "v1.1.2",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/predis/predis.git",
-                "reference": "82eb18c6c3860849cb6e2ff34b0c4b39d5daee46"
+                "reference": "2ce537d75e610550f5337e41b2a971417999b028"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/predis/predis/zipball/82eb18c6c3860849cb6e2ff34b0c4b39d5daee46",
-                "reference": "82eb18c6c3860849cb6e2ff34b0c4b39d5daee46",
+                "url": "https://api.github.com/repos/predis/predis/zipball/2ce537d75e610550f5337e41b2a971417999b028",
+                "reference": "2ce537d75e610550f5337e41b2a971417999b028",
                 "shasum": ""
             },
             "require": {
-                "cweagans/composer-patches": "^1.6",
                 "php": ">=5.3.9"
             },
             "require-dev": {
+                "cweagans/composer-patches": "^1.6",
                 "phpunit/phpunit": "~4.8"
             },
             "suggest": {
@@ -665,11 +621,17 @@
                 {
                     "name": "Daniele Alessandri",
                     "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
+                    "homepage": "http://clorophilla.net",
+                    "role": "Creator & Maintainer"
+                },
+                {
+                    "name": "Till Krüss",
+                    "homepage": "https://till.im",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Flexible and feature-complete Redis client for PHP and HHVM",
-            "homepage": "http://github.com/nrk/predis",
+            "homepage": "http://github.com/predis/predis",
             "keywords": [
                 "nosql",
                 "predis",
@@ -677,28 +639,24 @@
             ],
             "funding": [
                 {
-                    "url": "https://www.paypal.me/tillkruss",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/tillkruss",
+                    "url": "https://github.com/sponsors/tillkruss",
                     "type": "github"
                 }
             ],
-            "time": "2020-08-11T17:28:15+00:00"
+            "time": "2020-08-18T21:00:59+00:00"
         },
         {
             "name": "primedata-ai/analytics-php",
-            "version": "0.2.6",
+            "version": "0.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/primedata-ai/sdk-php.git",
-                "reference": "2244ad5d97c6f39e46b656fd7dde212716666ebc"
+                "reference": "ed9c1595e5c092ae64f58736140011f4f279c59f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/primedata-ai/sdk-php/zipball/2244ad5d97c6f39e46b656fd7dde212716666ebc",
-                "reference": "2244ad5d97c6f39e46b656fd7dde212716666ebc",
+                "url": "https://api.github.com/repos/primedata-ai/sdk-php/zipball/ed9c1595e5c092ae64f58736140011f4f279c59f",
+                "reference": "ed9c1595e5c092ae64f58736140011f4f279c59f",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +686,7 @@
                 }
             ],
             "description": "Analytics SDK",
-            "time": "2020-08-15T12:26:56+00:00"
+            "time": "2020-08-30T06:21:53+00:00"
         },
         {
             "name": "psr/container",
@@ -1937,16 +1895,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd"
+                "reference": "8a7ecad675253e4654ea05505233285377405215"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/95c63ab2117a72f48f5a55da9740a3273d45b7fd",
-                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8a7ecad675253e4654ea05505233285377405215",
+                "reference": "8a7ecad675253e4654ea05505233285377405215",
                 "shasum": ""
             },
             "require": {
@@ -1995,11 +1953,15 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-08T08:27:21+00:00"
+            "time": "2020-08-23T12:54:47+00:00"
         },
         {
             "name": "composer/composer",
@@ -2232,16 +2194,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51"
+                "reference": "ebd27a9866ae8254e873866f795491f02418c5a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
-                "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/ebd27a9866ae8254e873866f795491f02418c5a5",
+                "reference": "ebd27a9866ae8254e873866f795491f02418c5a5",
                 "shasum": ""
             },
             "require": {
@@ -2286,7 +2248,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-04T11:16:35+00:00"
+            "time": "2020-08-19T10:27:58+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -2792,16 +2754,16 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v7.25.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
-                "reference": "12b52d7fd87719a3cabf3f269c14c0c496e78a1a"
+                "reference": "4bf97b84fa67563abe8fd64179c29c6fc513e3b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/console/zipball/12b52d7fd87719a3cabf3f269c14c0c496e78a1a",
-                "reference": "12b52d7fd87719a3cabf3f269c14c0c496e78a1a",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/4bf97b84fa67563abe8fd64179c29c6fc513e3b3",
+                "reference": "4bf97b84fa67563abe8fd64179c29c6fc513e3b3",
                 "shasum": ""
             },
             "require": {
@@ -2842,20 +2804,20 @@
             ],
             "description": "The Illuminate Console package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-03T23:22:01+00:00"
+            "time": "2020-08-24T13:15:53+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.25.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "37a76782aef1bb83680143c4283b1bf3db751e96"
+                "reference": "56cd618b9801cdae35c389c71bb692fcb075ef64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/37a76782aef1bb83680143c4283b1bf3db751e96",
-                "reference": "37a76782aef1bb83680143c4283b1bf3db751e96",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/56cd618b9801cdae35c389c71bb692fcb075ef64",
+                "reference": "56cd618b9801cdae35c389c71bb692fcb075ef64",
                 "shasum": ""
             },
             "require": {
@@ -2886,20 +2848,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-19T12:38:38+00:00"
+            "time": "2020-08-17T15:18:25+00:00"
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.25.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "d5d7739e23a760b0fa56f64c0f7382a72e8ee86a"
+                "reference": "192ceb4d7fe0900bec84258554be0d8d74fa0818"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/d5d7739e23a760b0fa56f64c0f7382a72e8ee86a",
-                "reference": "d5d7739e23a760b0fa56f64c0f7382a72e8ee86a",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/192ceb4d7fe0900bec84258554be0d8d74fa0818",
+                "reference": "192ceb4d7fe0900bec84258554be0d8d74fa0818",
                 "shasum": ""
             },
             "require": {
@@ -2941,20 +2903,20 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-24T09:17:00+00:00"
+            "time": "2020-08-25T13:29:03+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v7.25.0",
+            "version": "v7.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab"
+                "reference": "893a17178ec34f749d6cfa92feec9843db55e39d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
-                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/893a17178ec34f749d6cfa92feec9843db55e39d",
+                "reference": "893a17178ec34f749d6cfa92feec9843db55e39d",
                 "shasum": ""
             },
             "require": {
@@ -3003,7 +2965,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-10T13:58:23+00:00"
+            "time": "2020-08-20T13:40:03+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -4454,16 +4416,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd"
+                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/3d5eb71705adfa34bd34b993400622932b2f62fd",
-                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/590cfec960b77fd55e39b7d9246659e95dd6d337",
+                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337",
                 "shasum": ""
             },
             "require": {
@@ -4509,7 +4471,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-13T09:07:59+00:00"
+            "time": "2020-08-25T06:56:57+00:00"
         },
         {
             "name": "seld/phar-utils",
