@@ -5,6 +5,7 @@ namespace Prime;
 
 
 use Illuminate\Support\Facades\Log;
+use Interop\Queue\ConnectionFactory;
 use Interop\Queue\Context;
 use Interop\Queue\Producer;
 use Interop\Queue\Exception;
@@ -25,11 +26,12 @@ class LaravelBuffer implements QueueBuffer
 
     /**
      * LaravelBuffer constructor.
-     * @param $queueContext
+     * @param ConnectionFactory $factory
      */
-    public function __construct(Context $queueContext)
+    public function __construct(ConnectionFactory $factory)
     {
-        $this->queueContext = $queueContext;
+        $context = $factory->createContext();
+        $this->queueContext = $context;
         $this->producer = $this->queueContext->createProducer();
     }
 
