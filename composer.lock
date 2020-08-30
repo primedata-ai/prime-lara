@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "039fad7d42886cf746b18b56898882de",
+    "content-hash": "f8d70a2368aa956202064f5cb3a1ca51",
     "packages": [
         {
             "name": "enqueue/dsn",
@@ -647,16 +647,16 @@
         },
         {
             "name": "primedata-ai/analytics-php",
-            "version": "0.2.7",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/primedata-ai/sdk-php.git",
-                "reference": "ed9c1595e5c092ae64f58736140011f4f279c59f"
+                "reference": "9f97e080319b753d88ee3c99315281da0091c1d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/primedata-ai/sdk-php/zipball/ed9c1595e5c092ae64f58736140011f4f279c59f",
-                "reference": "ed9c1595e5c092ae64f58736140011f4f279c59f",
+                "url": "https://api.github.com/repos/primedata-ai/sdk-php/zipball/9f97e080319b753d88ee3c99315281da0091c1d0",
+                "reference": "9f97e080319b753d88ee3c99315281da0091c1d0",
                 "shasum": ""
             },
             "require": {
@@ -686,7 +686,7 @@
                 }
             ],
             "description": "Analytics SDK",
-            "time": "2020-08-30T06:21:53+00:00"
+            "time": "2020-08-30T07:36:15+00:00"
         },
         {
             "name": "psr/container",
