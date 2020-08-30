@@ -50,7 +50,6 @@ class ConsumerPrimeEvent extends Command
 
     /**
      * Execute the console command.
-     * @param $topic
      * @throws \Exception
      */
     public function handle()
