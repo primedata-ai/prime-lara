@@ -2,7 +2,7 @@
   "name": "primedata-ai/prime-lara",
   "description": "PrimeDATA sdk for Laravel",
   "type": "library",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "require": {
     "primedata-ai/analytics-php": "v0.3.*",
     "enqueue/redis": "^0.9.12",

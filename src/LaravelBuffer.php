@@ -38,7 +38,7 @@ class LaravelBuffer implements QueueBuffer
     /**
      * @inheritDoc
      */
-    public function sendMessage(string $topic, object $msg)
+    public function sendMessage(string $topic, \JsonSerializable $msg)
     {
         $topic = $this->queueContext->createTopic($topic);
         $message = $this->queueContext->createMessage(serialize($msg));
